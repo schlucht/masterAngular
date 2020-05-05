@@ -9,7 +9,7 @@ export class ModsHomeComponent implements OnInit {
     constructor() {}
     modalOpen = false;
     ngOnInit() {}
-    onCklick() {
+    onClick() {
         this.modalOpen = !this.modalOpen;
     }
 }
