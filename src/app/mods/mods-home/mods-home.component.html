@@ -1,14 +1,17 @@
 <app-divider>Module Components</app-divider>
 <button (click)="onClick()">Show Modal</button>
 <app-mods (close)="onClick()" *ngIf="modalOpen">
-<div modal-title>
-    <h1>My Title</h1>
-</div>
+    <div modal-title>
+        <h1>My Title</h1>
+    </div>
     <p>
         Some Content for the modalwindow should
     </p>
-<ng-container modal-footer>
-    <button  (click)="onClick()" class="btn btn-cancel ui button">Cancel</button>
-</ng-container>
-
+    <ng-container modal-footer>
+        <button (click)="onClick()" class="btn btn-cancel ui button">
+            Cancel
+        </button>
+    </ng-container>
 </app-mods>
+<app-divider>Accordion Component</app-divider>
+<app-accordion [items]="items"></app-accordion>
